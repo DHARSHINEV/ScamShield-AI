@@ -42,5 +42,5 @@ services:
       - key: NEXT_PUBLIC_API_URL
         fromService:
           type: web
-          name: scamshield-backend
+          name: ScamShield-AI
           property: host
