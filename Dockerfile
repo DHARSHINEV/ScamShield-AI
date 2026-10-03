@@ -5,7 +5,7 @@ FROM python:3.11-slim
 # Prevent Python from buffering stdout/stderr and writing pyc files
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PORT=8000 \
+    PORT=10000 \
     HOST=0.0.0.0 \
     ENVIRONMENT=production
 
@@ -30,12 +30,12 @@ COPY backend/ ./backend/
 COPY models/ ./models/
 COPY samples/ ./samples/
 
-# Expose container port
-EXPOSE 8000
+# Expose container ports (Render default 10000 and legacy 8000)
+EXPOSE 10000 8000
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-    CMD curl -f http://localhost:${PORT}/api/health || exit 1
+    CMD curl -f http://127.0.0.1:${PORT:-10000}/api/health || exit 1
 
-# Launch uvicorn listening on 0.0.0.0:$PORT
-CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT}"]
+# Launch uvicorn listening on 0.0.0.0:$PORT with fallback to 10000
+CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-10000}"]

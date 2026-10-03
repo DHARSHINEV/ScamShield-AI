@@ -55,6 +55,7 @@ app.include_router(voice_router, prefix=settings.API_PREFIX)
 app.include_router(dojo_router, prefix=settings.API_PREFIX)
 app.include_router(guardian_router, prefix=settings.API_PREFIX)
 
+@app.get("/health", tags=["Health"])
 @app.get("/api/health", tags=["Health"])
 async def health_check():
     """
@@ -94,6 +95,6 @@ if __name__ == "__main__":
     import os
     import uvicorn
     host = os.getenv("HOST", "0.0.0.0")
-    port = int(os.getenv("PORT", 8000))
+    port = int(os.getenv("PORT", 10000))
     reload = os.getenv("ENVIRONMENT", "production").lower() == "development"
     uvicorn.run("backend.main:app", host=host, port=port, reload=reload)
