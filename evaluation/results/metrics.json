@@ -1,0 +1,78 @@
+{
+  "benchmark_type": "prototype_validation_benchmark",
+  "dataset": {
+    "total_samples": 70,
+    "url_samples": 40,
+    "message_samples": 30,
+    "positive_scam_samples": 35,
+    "negative_legitimate_samples": 35,
+    "balance_ratio": "50% scam / 50% legitimate (balanced)",
+    "data_source": "Manually curated representative synthetic and public cyber threat patterns",
+    "limitations": [
+      "Small prototype dataset (70 samples) designed for validation of detection pipeline components.",
+      "Not an external wild-web benchmark.",
+      "Does not reflect production-world threat drift without continuous retraining."
+    ]
+  },
+  "evaluation_methodology": "5-Fold Stratified Cross-Validation with strict out-of-fold prediction (Zero Leakage)",
+  "results": {
+    "ml_classifier_oof_cv": {
+      "accuracy": 0.8429,
+      "precision": 0.9286,
+      "recall": 0.7429,
+      "f1_score": 0.8254,
+      "confusion_matrix": {
+        "true_positive": 26,
+        "false_positive": 2,
+        "true_negative": 33,
+        "false_negative": 9
+      },
+      "total_samples": 70,
+      "average_latency_ms": 6.86
+    },
+    "url_detector_oof": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "confusion_matrix": {
+        "true_positive": 20,
+        "false_positive": 0,
+        "true_negative": 20,
+        "false_negative": 0
+      },
+      "total_samples": 40,
+      "average_latency_ms": 0.84
+    },
+    "message_detector_oof": {
+      "accuracy": 0.8333,
+      "precision": 0.9167,
+      "recall": 0.7333,
+      "f1_score": 0.8148,
+      "confusion_matrix": {
+        "true_positive": 11,
+        "false_positive": 1,
+        "true_negative": 14,
+        "false_negative": 4
+      },
+      "total_samples": 30,
+      "average_latency_ms": 0.42
+    },
+    "combined_multisignal_oof": {
+      "accuracy": 0.9286,
+      "precision": 0.9688,
+      "recall": 0.8857,
+      "f1_score": 0.9254,
+      "confusion_matrix": {
+        "true_positive": 31,
+        "false_positive": 1,
+        "true_negative": 34,
+        "false_negative": 4
+      },
+      "total_samples": 70,
+      "average_latency_ms": 0.66
+    }
+  },
+  "feature_count": 26,
+  "timestamp": "2026-10-03 13:14:23"
+}

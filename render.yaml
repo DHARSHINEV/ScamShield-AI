@@ -1,0 +1,42 @@
+# Render Infrastructure Blueprint for ScamShield AI
+# Deploy both Backend FastAPI Service and Next.js Frontend with one click
+
+services:
+  # -------------------------------------------------------------
+  # 1. ScamShield AI Backend (FastAPI + ML + Vision Engines)
+  # -------------------------------------------------------------
+  - type: web
+    name: scamshield-backend
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
+    startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /api/health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: '["*"]'
+      - key: LLM_PROVIDER
+        value: local
+
+  # -------------------------------------------------------------
+  # 2. ScamShield AI Frontend (Next.js 16 + React 19 + Tailwind)
+  # -------------------------------------------------------------
+  - type: web
+    name: scamshield-frontend
+    env: node
+    region: oregon
+    plan: starter
+    rootDir: frontend
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm run start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: scamshield-backend
+          property: host

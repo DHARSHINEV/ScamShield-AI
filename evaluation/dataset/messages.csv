@@ -1,0 +1,31 @@
+text,label,category
+"🚨 SBI ALERT: Your account will be blocked today. Verify your KYC immediately: https://sbi-verify-secure.xyz",1,bank_phishing
+"India Post: Your package #IN78219 could not be delivered due to wrong house address. Pay ₹25 redelivery fee to avoid return: http://indiapost-parcel-update.com/track",1,delivery_scam
+"Congratulations! You won ₹25,00,000 in KBC Lottery. Transfer ₹1,500 registration fee to claim prize immediately.",1,lottery_scam
+"Dear customer, your electricity power will be disconnected tonight at 9:30 PM. Call power officer at 9845012345 immediately.",1,utility_threat
+"Part time work from home: Earn ₹4,500 daily by liking YouTube videos. Contact Telegram @HrTaskOfficer to join now.",1,job_scam
+"DIGITAL ARREST NOTICE: 140g narcotics seized in your name at Mumbai customs. Connect to CBI video call immediately to avoid arrest.",1,extortion
+"HDFC Netbanking: Suspicious login from Moscow. Click here to confirm identity and enter password: https://hdfc-netbanking-update.top/login",1,bank_phishing
+"I sent ₹12,000 for your OLX item. Please enter your UPI PIN on Google Pay to receive the money.",1,upi_fraud
+"Dear user, your SIM card will be deactivated in 24 hours. Call customer care and share your 6-digit OTP code.",1,otp_scam
+"Amazon Exclusive: You have been selected for free iPhone 16 Pro! Pay ₹99 shipping fee at https://amazon-security-reward.click/claim",1,reward_scam
+"VIP Trading Signals: Guaranteed 40% weekly return with zero risk. Minimum deposit ₹10,000: https://axtrader-bot-wealth.top/invest",1,investment_scam
+"WhatsApp Support: Your account will be deleted for spam. Install QuickSupport remote app to verify your phone number.",1,fake_support
+"Income Tax Department: Your tax refund of ₹42,500 is approved. Update bank details at http://income-tax-refund-claim.win/refund",1,govt_phishing
+"Federal Express: Parcel on hold due to missing customs payment of $15. Clear now at http://fedex-parcel-redelivery.bid/reschedule",1,delivery_scam
+"Urgent: Your Netflix account is suspended. Update billing information to prevent permanent cancellation: https://netflix-subscription-renew.work/billing",1,streaming_phishing
+"SBI: ₹2,500.00 debited from A/C ...8902 on 03-Oct-26 at ATM-MG ROAD. Available balance ₹34,210.50. Call 18001234 if not done by you.",0,bank_transaction
+"BlueDart: Your Amazon order with AWB #849102941 is out for delivery today with associate Suresh. Share PIN only on receipt.",0,delivery_legit
+"Your one time password for logging into NetBanking is 592810. Do not share this OTP with anyone, including bank staff.",0,legit_otp
+"Swiggy: Your food order from Biryani House is confirmed and being prepared by the restaurant. Estimated delivery 35 mins.",0,ecommerce_legit
+"GitHub: Your yearly GitHub Copilot subscription is scheduled to renew on Oct 15, 2026. Review at https://github.com/settings/billing.",0,tech_legit
+"HDFC Bank: ₹1,420.00 spent on Debit Card ending 4092 at FRESHMART SUPERMARKET. Available balance: ₹48,310.45.",0,bank_transaction
+"Flipkart: Your package containing Wireless Earbuds has been dispatched from Bangalore hub. Track in official app.",0,delivery_legit
+"IRCTC: Your ticket for Train 12626 KERALA EXPRESS on 12-Oct-2026 is confirmed. Coach B3 Berth 42 (MB).",0,travel_legit
+"Google Security Alert: New sign-in detected on Windows device in Bengaluru. If this was you, no action needed.",0,security_alert_legit
+"Airtel: Your monthly bill for broadband connection #080-492193 is ₹1,178. Due date 18-Oct-2026. Pay via Airtel Thanks App.",0,utility_legit
+"Zomato: Delivery partner Rahul has picked up your order and is on the way. Reach him through in-app call.",0,delivery_legit
+"BookMyShow: Booking confirmed for Interstellar at PVR Forum Koramangala. Screen 4, Seats F11-F12.",0,entertainment_legit
+"Apollo Pharmacy: Your prescription medicines have been packed and will arrive by 5 PM. No payment required (Prepaid).",0,health_legit
+"Uber: Your receipt for trip with driver Santosh is ₹284. Thank you for riding with Uber.",0,travel_legit
+"Income Tax Dept: Annual Information Statement (AIS) for FY 2025-26 is now available on official portal https://www.incometax.gov.in.",0,govt_legit

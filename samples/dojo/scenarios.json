@@ -1,0 +1,209 @@
+[
+  {
+    "id": "dojo-01",
+    "level": 1,
+    "level_title": "Level 1: Obvious Scams",
+    "difficulty": "Beginner",
+    "category": "lottery scam",
+    "scenario": "You receive an unsolicited SMS while having breakfast.",
+    "message": "CONGRATULATIONS! You have been chosen as the lucky winner of ₹25,00,000 in the International KBC Lottery 2026. Send your bank details and ₹1,500 registration fee to claim your prize immediately.",
+    "url": "http://kbc-lucky-winner-claim.xyz/verify",
+    "is_scam": true,
+    "explanation": [
+      "Unsolicited lottery win for a contest you never entered",
+      "Demands an advance registration fee to release prize money (Advance Fee Fraud)",
+      "Unrealistic monetary amount designed to trigger excitement and bypass critical thinking",
+      "Suspicious .xyz domain impersonating KBC"
+    ],
+    "key_takeaway": "Legitimate lotteries never require winners to pay advance fees or send passwords."
+  },
+  {
+    "id": "dojo-02",
+    "level": 1,
+    "level_title": "Level 1: Obvious Scams",
+    "difficulty": "Beginner",
+    "category": "bank phishing",
+    "scenario": "Urgent SMS notification arrives with a bank warning.",
+    "message": "🚨 SBI ALERT: Your account will be blocked today. Verify your KYC immediately to continue banking: https://sbi-verify-secure.xyz",
+    "url": "https://sbi-verify-secure.xyz",
+    "is_scam": true,
+    "explanation": [
+      "Artificial urgency: 'blocked today' threatens disruption of essential services",
+      "Demands urgent KYC verification via an external link",
+      "Lookalike domain: 'sbi-verify-secure.xyz' is not the official 'onlinesbi.sbi' or 'sbi.co.in'"
+    ],
+    "key_takeaway": "Banks never threaten same-day blockage with third-party link verification. Always verify via the official bank app."
+  },
+  {
+    "id": "dojo-03",
+    "level": 2,
+    "level_title": "Level 2: Subtle Phishing",
+    "difficulty": "Beginner",
+    "category": "delivery scam",
+    "scenario": "SMS arrives while you are expecting an online order.",
+    "message": "India Post Tracking: Your package #IN9841029 cannot be delivered due to incorrect house number. Please update your address and pay ₹25 redelivery fee: https://indiapost-parcel-update.com/track",
+    "url": "https://indiapost-parcel-update.com/track",
+    "is_scam": true,
+    "explanation": [
+      "Plausible scenario: capitalizes on common expectation of e-commerce parcels",
+      "Micro-payment bait: ₹25 fee seems trivial, but the payment portal is designed to skim your debit/credit card details and OTP",
+      "Domain spoof: 'indiapost-parcel-update.com' is not the government portal 'indiapost.gov.in'"
+    ],
+    "key_takeaway": "India Post and couriers do not charge micro-fees via unknown links to fix address discrepancies."
+  },
+  {
+    "id": "dojo-04",
+    "level": 2,
+    "level_title": "Level 2: Subtle Phishing",
+    "difficulty": "Intermediate",
+    "category": "legitimate",
+    "scenario": "Transaction notification after an in-store grocery purchase.",
+    "message": "HDFC Bank: ₹1,420.00 spent on your Debit Card ending 4092 at FRESHMART SUPERMARKET on 03-Oct-26 11:20 AM. Available balance: ₹48,310.45. If not you, call 18002026161.",
+    "url": "",
+    "is_scam": false,
+    "explanation": [
+      "Accurate contextual merchant name, masked card digits (ending 4092), and timestamp",
+      "No urgency or pressure to click external third-party links",
+      "Provides official toll-free bank dispute number rather than an unverified mobile number or URL",
+      "Does not ask for passwords, OTP, or KYC updates"
+    ],
+    "key_takeaway": "Legitimate transaction SMS notifications state the event clearly without coercing you to click external links."
+  },
+  {
+    "id": "dojo-05",
+    "level": 3,
+    "level_title": "Level 3: Fake Customer Support",
+    "difficulty": "Intermediate",
+    "category": "fake customer support",
+    "scenario": "You posted on X/Twitter about an issue with your airline refund.",
+    "message": "Dear passenger, we apologize for the refund delay. Kindly contact our priority refund executive Mr. Sharma on WhatsApp +91-9876543210 or install our Remote Assistance QuickSupport APK to process your instant refund.",
+    "url": "",
+    "is_scam": true,
+    "explanation": [
+      "Impersonates airline customer support via personal WhatsApp number",
+      "Requests installation of Remote Assistance APK (e.g. AnyDesk / TeamViewer / QuickSupport)",
+      "Screen sharing apps give scammers complete remote access to view your screen, OTPs, and banking credentials"
+    ],
+    "key_takeaway": "Never install remote desktop or screen sharing apps at the request of customer care representatives."
+  },
+  {
+    "id": "dojo-06",
+    "level": 3,
+    "level_title": "Level 3: Fake Customer Support",
+    "difficulty": "Intermediate",
+    "category": "social media account recovery",
+    "scenario": "You receive a direct message on Instagram from 'Meta Copyright Support'.",
+    "message": "Copyright Infringement Notice: Your account will be permanently deactivated within 24 hours for community guideline violations. If you believe this is an error, appeal immediately at https://meta-security-case92.com/appeal",
+    "url": "https://meta-security-case92.com/appeal",
+    "is_scam": true,
+    "explanation": [
+      "Threatens immediate deactivation to induce panic",
+      "Unofficial domain 'meta-security-case92.com' instead of official instagram.com or meta.com",
+      "Phishing appeal form that captures your 2FA backup codes and password"
+    ],
+    "key_takeaway": "Official social platforms send security notices in the app's official 'Emails from Instagram' tab, never via direct messages."
+  },
+  {
+    "id": "dojo-07",
+    "level": 4,
+    "level_title": "Level 4: Job Scams",
+    "difficulty": "Intermediate",
+    "category": "job scam",
+    "scenario": "WhatsApp message from an unknown international number offering work.",
+    "message": "Hello! I am Emily, Global Recruitment Manager at Google Partner Agency. We have remote part-time vacancies: simply like YouTube videos and write Google reviews. Earn ₹3,500 - ₹8,000 daily. Payouts every 2 hours via UPI. Contact our Telegram coordinator @TaskOfficer26 to start.",
+    "url": "",
+    "is_scam": true,
+    "explanation": [
+      "Unrealistically high remuneration for trivial, unskilled tasks (liking videos)",
+      "Unsolicited WhatsApp outreach from an unknown number",
+      "Funnels the victim to Telegram — classic 'task scam' where victim is paid small amounts first, then tricked into depositing large 'prepaid investment' funds"
+    ],
+    "key_takeaway": "Real corporations never recruit through unsolicited WhatsApp messages paying thousands for liking videos."
+  },
+  {
+    "id": "dojo-08",
+    "level": 4,
+    "level_title": "Level 4: Job Scams",
+    "difficulty": "Advanced",
+    "category": "investment scam",
+    "scenario": "Invited to a Telegram channel discussing high-yield crypto trading.",
+    "message": "VIP Crypto Signal Group: Guaranteed 40% weekly returns with our automated AI trading bot. Zero risk. Minimum deposit ₹10,000. Regulated by SEBI & International Trading Council. Withdraw your profits anytime within 15 minutes.",
+    "url": "https://axtrader-bot-wealth.top",
+    "is_scam": true,
+    "explanation": [
+      "'Guaranteed 40% weekly returns' is financially impossible and the hallmark of a Ponzi / Pig Butchering scam",
+      "False claim of SEBI regulation for cryptocurrency trading bots",
+      "Fake investment dashboards show simulated balance gains but freeze withdrawals demanding 'tax clearance fees'"
+    ],
+    "key_takeaway": "Any investment scheme promising 'guaranteed high returns with zero risk' is fraudulent."
+  },
+  {
+    "id": "dojo-09",
+    "level": 5,
+    "level_title": "Level 5: UPI / Payment Scams",
+    "difficulty": "Advanced",
+    "category": "UPI scam",
+    "scenario": "Buyer on OLX wants to purchase your used furniture without seeing it in person.",
+    "message": "I agree to buy your sofa for ₹12,000. I have sent a UPI payment request to your Google Pay. Please enter your UPI PIN on your phone immediately to receive the money in your bank account.",
+    "url": "",
+    "is_scam": true,
+    "explanation": [
+      "Fundamental UPI rule violation: You NEVER enter your UPI PIN to RECEIVE money",
+      "Entering a UPI PIN authorizes money to be DEDUCTED from your bank account",
+      "The buyer sent a 'Collect Request' (Pay Request) disguised as a transfer"
+    ],
+    "key_takeaway": "UPI PIN is only entered when sending money. Receiving money never requires your PIN."
+  },
+  {
+    "id": "dojo-10",
+    "level": 5,
+    "level_title": "Level 5: UPI / Payment Scams",
+    "difficulty": "Advanced",
+    "category": "fake electricity bill",
+    "scenario": "SMS in regional language or English regarding utility bill.",
+    "message": "Dear consumer, your electricity power supply will be disconnected tonight at 9:30 PM from the power office because your previous month bill was not updated. Please immediately contact our power officer at 9845012345.",
+    "url": "",
+    "is_scam": true,
+    "explanation": [
+      "Panic-inducing threat of immediate power disconnection tonight",
+      "Lists a personal 10-digit mobile number instead of the official electricity board bill portal or toll-free helpline",
+      "Scammer instructs caller to download a malicious screen-sharing APK or transfer bill amount to a personal UPI ID"
+    ],
+    "key_takeaway": "Utility boards follow formal billing cycles and notices. Always pay bills through official state electricity portals."
+  },
+  {
+    "id": "dojo-11",
+    "level": 6,
+    "level_title": "Level 6: Advanced Social Engineering",
+    "difficulty": "Advanced",
+    "category": "government impersonation",
+    "scenario": "Video call request from someone wearing a police uniform claiming to be CBI.",
+    "message": "DIGITAL ARREST NOTICE: A parcel containing 5 fake passports and 140 grams of narcotics addressed to your Aadhaar card has been seized at Mumbai Customs. You are placed under 24-hour Digital Arrest. Do not disconnect the video call. Transfer your funds to the RBI verification escrow account for clearance.",
+    "url": "",
+    "is_scam": true,
+    "explanation": [
+      "'Digital Arrest' does NOT exist in Indian law or police procedure",
+      "Law enforcement agencies never conduct judicial trials or investigations via Skype / WhatsApp video calls",
+      "No government agency ever asks citizens to transfer money to 'verification escrow accounts'"
+    ],
+    "key_takeaway": "There is no such legal concept as 'Digital Arrest'. If you receive such a call, hang up immediately and call 1930."
+  },
+  {
+    "id": "dojo-12",
+    "level": 6,
+    "level_title": "Level 6: Advanced Social Engineering",
+    "difficulty": "Advanced",
+    "category": "legitimate",
+    "scenario": "Email notification regarding your upcoming cloud service subscription renewal.",
+    "message": "GitHub: Your yearly GitHub Copilot subscription is scheduled to renew on October 15, 2026 for $100.00. We will charge your card ending in 8123. If you want to update payment method or cancel, visit your billing settings in your account dashboard at https://github.com/settings/billing.",
+    "url": "https://github.com/settings/billing",
+    "is_scam": false,
+    "explanation": [
+      "Gives ample advance notice (12 days) without artificial immediate panic",
+      "States exact service name, expected renewal amount, and masked card digits",
+      "Link directs directly to official 'github.com' domain without redirects or deceptive subdomains",
+      "Does not ask you to reply with credentials or install external utilities"
+    ],
+    "key_takeaway": "Legitimate subscription notices allow reasonable advance review and guide users directly to official account settings."
+  }
+]
