@@ -16,15 +16,26 @@ from backend.api.guardian import router as guardian_router
 from backend.vision.ocr import get_ocr_engine
 from backend.detection.classifier import get_or_load_model
 
+from contextlib import asynccontextmanager
+
 APP_START_TIME = time.time()
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    import os
+    port = os.getenv("PORT", "10000")
+    print(f"[ScamShield AI] Production server online. Bound to 0.0.0.0:{port}")
+    yield
 
 app = FastAPI(
     title="ScamShield AI API",
     description="Multi-Signal AI-Powered Scam Detection, Explainability, and Cyber Prevention Platform",
     version=settings.VERSION,
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    lifespan=lifespan
 )
+
 
 # CORS configuration
 app.add_middleware(
